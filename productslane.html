@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LOOM & LANÈ</title>
+  <link rel="icon" href="L&L image.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="loooooooo.css">
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="logo">
+      <i>LOOM & LANÈ</i>
+    </div>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="productslane.html">PRODUCTS</a>
+      <a href="Faqlane.html">FAQ</a>
+      <a href="aboutuslane.html">ABOUT US</a>
+      <a href="looncontact.html">CONTACT US</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <div class="search-box">
+        <form id="googleSearchForm" target="_blank" action="https://www.google.com/search" method="GET"
+          class="search-form" autocomplete="off">
+          <input type="text" name="q" id="searchInput" placeholder="Search..." required>
+        </form>
+      </div>
+
+      <a href="cartlane.html" class="cart-link">
+        <i class="fa-solid fa-cart-shopping icon"></i>
+        <span id="cartcount">0</span>
+      </a>
+
+      <i class="fa-regular fa-moon icon dark-toggle-btn"></i>
+
+      <a href="looonlog.html" class="user-link">
+        <i class="fa-regular fa-user icon"></i>
+      </a>
+    </div>
+
+  </header>
+  <br>
+
+  <section class="product-page">
+
+    <p class="subtitle"></p>
+    <h1>Elegance Awaits You</h1>
+
+    <div class="filters">
+      <button class="active">All needs</button>
+      <button>wooden Rack</button>
+      <button>wooden deco</button>
+      <button>vase</button>
+      <button>porcelain</button>
+      <button>flowers</button>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card" data-category="wooden rack">
+        <a href="p1.html" class="product-link">
+          <div class="img-wrap">
+            <img src="selfrackloon.jpg" alt="wood item">
+          </div>
+          <h3>Wooden Self Rack</h3>
+        </a>
+        <p class="price">LKR 3400.00 </p>
+        <p class="rating">★★★★ 4.0</p>
+        <br>
+        <button class="cart-btn" data-name="Wooden self Rack"
+          onclick="addToCart(this, 'Wooden self Rack', 3400, 'selfrackloon.jpg')">Add to Cart</button>
+      </div>
+
+
+      <div class="product-card" data-category="wooden deco">
+        <a href="p2.html" class="product-link">
+          <div class="img-wrap">
+            <img src="wdear1.jpg" alt="wood item">
+          </div>
+          <h3>Wooden Deer</h3>
+        </a>
+        <p class="price"><del>LKR 3500.00</del> LKR.2800.00</p>
+        <p class="rating">★★★★ 4.4</p>
+        <br>
+        <button class="cart-btn" data-name="Wooden Deer"
+          onclick="addToCart(this, 'Wooden Deer', 2800, 'wdear1.jpg')">Add to Cart</button>
+      </div>
+
+
+      <div class="product-card" data-category="wooden deco">
+        <a href="p3.html" class="product-link">
+          <div class="img-wrap">
+            <img src="tablelamploon.jpg" alt="wood item">
+          </div>
+          <h3>Wood Table Lamp</h3>
+        </a>
+        <p class="price">LKR 4000.00</p>
+        <p class="rating">★★★★ 4.1</p>
+        <br>
+        <button class="cart-btn" data-name="Wooden Table Lamp"
+          onclick="addToCart(this, 'Wooden Table Lamp', 4000, 'tablelamploon.jpg')">Add to Cart</button>
+      </div>
+
+
+      <div class="product-card" data-category="wooden rack">
+        <a href="p4.html" class="product-link">
+          <div class="img-wrap">
+            <img src="keyloon1.jpg" alt="">
+          </div>
+          <h3>key hanger</h3>
+        </a>
+        <p class="price">LKR 2000.00</p>
+        <p class="rating">★★★★★ 5.0</p>
+        <br>
+        <button class="cart-btn" data-name="Key hanger"
+          onclick="addToCart(this, 'Key hanger', 2000, 'keyloon1.jpg')">Add to Cart</button>
+      </div>
+
+
+      <div class="product-card" data-category="vase">
+        <a href="p5.html" class="product-link">
+          <div class="img-wrap">
+            <img src="pvaseloon.jpg" alt="">
+          </div>
+          <h3>Porcelain vase</h3>
+        </a>
+        <p class="price">LKR 7000.00</p>
+        <p class="rating">★ 1.2</p>
+        <br>
+        <button class="cart-btn" data-name="Porcelain vase"
+          onclick="addToCart(this, 'Porcelain vase', 7000, 'pvaseloon.jpg')">Add to Cart</button>
+      </div>
+
+
+      <div class="product-card" data-category="porcelain">
+        <a href="p6.html" class="product-link">
+          <div class="img-wrap">
+            <img src="peleloon1.jpg" alt="">
+          </div>
+          <h3>Porcelain elephant</h3>
+        </a>
+        <p class="price">LKR 6500.00</p>
+        <p class="rating">★★★★★ 5.0</p>
+        <br>
+        <button class="cart-btn" data-name="Porcelain elephant"
+          onclick="addToCart(this, 'Porcelain elephant', 6500, 'peleloon1.jpg')">Add to Cart</button>
+      </div>
+
+
+      <div class="product-card" data-category="porcelain">
+        <a href="p7.html" class="product-link">
+          <div class="img-wrap">
+            <img src="plamploon.jpg" alt="">
+          </div>
+          <h3>Porcelain lamp</h3>
+        </a>
+        <p class="price">LKR 12,500.00</p>
+        <p class="rating">★★★★★ 5.0</p>
+        <br>
+        <button class="cart-btn" data-name="Porcelain lamp"
+          onclick="addToCart(this, 'Porcelain lamp', 12500, 'plamploon.jpg')">Add to Cart</button>
+      </div>
+
+
+      <div class="product-card" data-category="porcelain">
+        <a href="p8.html" class="product-link">
+          <div class="img-wrap">
+            <img src="pcandleloon1.jpg" alt="">
+          </div>
+          <h3>Porcelain Candle</h3>
+        </a>
+        <p class="price">LKR 1200.00</p>
+        <p class="rating">★★ 2.3</p>
+        <br>
+        <button class="cart-btn" data-name="Porcelain Candle"
+          onclick="addToCart(this, 'Porcelain Candle', 1200, 'pcandleloon1.jpg')">Add to Cart</button>
+      </div>
+
+
+      <div class="product-card" data-category="flowers">
+        <a href="p9.html" class="product-link">
+          <div class="img-wrap">
+            <img src="ffloon.jpg" alt="">
+          </div>
+          <h3>Carnation Flower</h3>
+        </a>
+        <p class="price">LKR 8500.00</p>
+        <p class="rating">★★★★ 4.7</p>
+        <button class="cart-btn" data-name="Carnation Flower"
+          onclick="addToCart(this, 'Carnation Flower', 8500, 'ffloon.jpg')">Add to Cart</button>
+      </div>
+
+
+      <div class="product-card" data-category="flowers">
+        <a href="p10.html" class="product-link">
+          <div class="img-wrap">
+            <img src="fcloon.jpg" alt="">
+          </div>
+          <h3>Gardinea flowers</h3>
+        </a>
+        <p class="price"><del>LKR 6500.00</del>LKR 6500.00</p>
+        <p class="rating">★★★★ 4.0</p>
+        <br>
+        <button class="cart-btn" data-name="Gardinea flowers"
+          onclick="addToCart(this, 'Gardinea flowers', 6500, 'fcloon.jpg')">Add to Cart</button>
+      </div>
+
+
+      <div class="product-card" data-category="flowers">
+        <a href="p11.html" class="product-link">
+          <div class="img-wrap">
+            <img src="fkloon.jpeg" alt="">
+          </div>
+          <h3>Sun flowers</h3>
+        </a>
+        <p class="price">LKR 7650.00</p>
+        <p class="rating">★★★★★ 5.0</p>
+        <br>
+        <button class="cart-btn" data-name="Sun flowers"
+          onclick="addToCart(this, 'Sun flowers', 7650, 'fkloon.jpeg')">Add to Cart</button>
+      </div>
+
+
+      <div class="product-card" data-category="flowers">
+        <a href="p12.html" class="product-link">
+          <div class="img-wrap">
+            <img src="fmloon.jpeg" alt="">
+          </div>
+          <h3>Garnation flowers</h3>
+        </a>
+        <p class="price">LKR 4500.00</p>
+        <p class="rating">★★★ 3.2</p>
+        <br>
+        <button class="cart-btn" data-name="Garnation flowers"
+          onclick="addToCart(this, 'Garnation flowers', 4500, 'fmloon.jpeg')">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- CDN connect js -->
+  <script src="cartfunction.js"></script>
+  <script src="loonlanen.js"></script>
+
+
+  <footer class="site-footer"> <!--footer designing-->
+    <div class="footer-grid">
+      <div class="footer-contact">
+        <h4>Our Branches</h4>
+        <p>Colombo Branch</p>
+        <p>Galle Branch</p>
+        <p>Kandy Branch</p>
+        <p>Kaluthara Branch</p>
+        <br>
+        <br>
+        <h4>Main branch</h4>
+        <p><strong>Contact Us</strong></p>
+        <p>+94 777 58 87 78</p>
+        <p>LOOM & LANÈ Studio, Colombo, Sri Lanka</p>
+        <p>Store Hours: 10:00am – 7:30pm</p>
+      </div>
+
+      <div class="footer-description">
+        <p><strong>LOOM & LANÈ</strong></p>
+        <p>LOOM & LANÈ is a celebration of timeless home décor, blending handcrafted wooden creations, refined porcelain
+          pieces, and artful floral arrangements.</p>
+      </div>
+
+      <div class="footer-links">
+        <p><strong>Explore</strong></p>
+        <p><a href="index.html">HOME</a> | <a href="productslane.html">PRODUCTS</a> | <a
+            href="Faqlane.html">FAQ</a> | <a href="aboutuslane.html">ABOUT US</a> | <a href="looncontact.html">CONTACT
+            US</a></p>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="L&Llogo.jpg" alt="home decarations" style="width:100px; height:100px;">
+    </div>
+
+    <div style="text-align: center;">
+      <p style="color: white;">L O O M & L A N È</p>
+    </div>
+    <br>
+
+    <div style="text-align: center;">
+      <p style="color: white;">2025. All rights reserved | Designed by Wathila Yethmal</p>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="dark-mood">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LOOM & LANÈ</title>
+  <link rel="icon" href="L&L image.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="loooooooo.css">
+</head>
+
+<body>
+
+  <header class="main-header">
+    <div class="logo">
+      <i> LOOM & LANÈ</i>
+    </div>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="productslane.html">PRODUCTS</a>
+      <a href="Faqlane.html">FAQ</a>
+      <a href="aboutuslane.html">ABOUT US</a>
+      <a href="looncontact.html">CONTACT US</a>
+    </nav>
+
+    <div class="header-actions">
+      <div class="search-box">
+        <form id="googleSearchForm" target="_blank" action="https://www.google.com/search" method="GET"
+          class="search-form" autocomplete="off">
+          <input type="text" name="q" id="searchInput" placeholder="Search..." required>
+        </form>
+      </div>
+
+      <a href="cartlane.html" class="cart-link">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cartcount">0</span>
+      </a>
+
+      <i class="fa-regular fa-moon icon dark-toggle-btn"></i>
+
+      <a href="looonlog.html" class="user-link">
+        <i class="fa-regular fa-user icon"></i>
+      </a>
+
+    </div>
+  </header>
+  <br>
+
+  <section class="hero">
+    <div class="hero-left">
+      <h1>New style for<br>your home</h1>
+      <p class="desc">
+        Discover the artistry of unique home decorations, where each piece tells a story of timeless elegance and
+        innovation.
+      </p>
+
+      <a href="productslane.html" class="btn-primary">Explore →</a>
+      <br>
+      <br>
+      <br>
+
+      <div class="stats">
+        <div class="stat">
+          <h2>12</h2>
+          <span>All over world</span>
+        </div>
+
+        <div class="stat">
+          <h2>130+</h2>
+          <span>Product Available</span>
+        </div>
+
+        <div class="stat">
+          <h2>2k+</h2>
+          <span>Product Review</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="image-frame">
+        <img src="plamploon1.jpg" alt="model">
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <h2 class="split-heading">
+    <span class="slim">OUR TOP BRANDED</span> <span class="bold">PRODUCTS</span>
+  </h2>
+
+  <section class="slider-section">
+    <div class="slider-container">
+      <button class="prev">&#10094;</button>
+      <div class="slider">
+        <div class="card">
+          <img src="peleloon.jpg" alt="Perfume 1">
+          <div class="details">
+            <h3>Porcelain Elephant</h3>
+            <p>new Arrival</p>
+            <span>LKR. 6,500.00</span>
+            <br>
+            <br>
+            <button class="cart-btn" data-name="Porcelain elephant"
+              onclick="addToCart(this, 'Porcelain elephant', 6500, 'peleloon1.jpg')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="plamploon1.jpg" alt="Perfume 2">
+          <div class="details">
+            <h3>Porcelain Lamp</h3>
+            <p>fast moving</p>
+            <span>LKR. 12,500.00</span>
+            <br>
+            <br>
+            <button class="cart-btn" data-name="Porcelain lamp"
+              onclick="addToCart(this, 'Porcelain lamp', 12500, 'plamploon.jpg')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="pcandleloon.jpg" alt="Perfume 3">
+          <div class="details">
+            <h3>Porcelain Candle</h3>
+            <p>#8880089</p>
+            <span>LKR. 1,200.00</span>
+            <br>
+            <br>
+            <button class="cart-btn" data-name="Porcelain Candle"
+              onclick="addToCart(this, 'Porcelain Candle', 1200, 'pcandleloon1.jpg')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="pvaseloon.jpg" alt="Perfume 3">
+          <div class="details">
+            <h3>Porcelain Vase</h3>
+            <p>Arrangement</p>
+            <span>LKR. 7,000.00</span>
+            <br>
+            <br>
+            <button class="cart-btn" data-name="Porcelain vase"
+              onclick="addToCart(this, 'Porcelain vase', 7000, 'pvaseloon.jpg')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="selfrackloon1.jpg" alt="Perfume 3">
+          <div class="details">
+            <h3>Wooden Self Rack</h3>
+            <p>most popular</p>
+            <span>LKR. 3,400.00</span>
+            <br>
+            <br>
+            <button class="cart-btn" data-name="Wooden self Rack"
+              onclick="addToCart(this, 'Wooden self Rack', 3400, 'selfrackloon.jpg')">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="wdear.jpg" alt="Perfume 3">
+          <div class="details">
+            <h3>Wooden Deer</h3>
+            <p>agrrist 444</p>
+            <span>LKR. 2,800.00</span>
+            <br>
+            <br>
+            <button class="cart-btn" data-name="Wooden Deer"
+              onclick="addToCart(this, 'Wooden Deer', 2800, 'wdear1.jpg')">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+
+  <section class="story-section">
+
+    <div class="story-row">
+      <div class="image-box">
+        <div class="frame"></div>
+        <img src="porcelain.jpg" alt="Porcelain">
+      </div>
+      <div class="text-box">
+        <h2>Porcelain Category</h2>
+        <p>
+          “Discover elegant porcelain décor crafted with timeless beauty.
+          From artistic figurines to refined accents, each piece adds
+          sophistication, charm, and lasting style to your living spaces.”
+        </p>
+        <a href="Porcelain intro.html" class="btn">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="story-row reverse">
+      <div class="image-box">
+        <div class="frame"></div>
+        <img src="woodencraft.png" alt="Wood">
+      </div>
+      <div class="text-box">
+        <h2>Wooden Category</h2>
+        <p>
+          “Explore handcrafted wooden décor made from natural materials. Featuring
+          rustic accents and timeless designs, each piece brings warmth,
+          character, and organic elegance to modern living spaces.”
+        </p>
+        <a href="wooden intro.html" class="btn">Learn More →</a>
+      </div>
+    </div>
+
+    <div class="story-row">
+      <div class="image-box">
+        <div class="frame"></div>
+        <img src="flowerarr.jpg" alt="Flower">
+      </div>
+      <div class="text-box">
+        <h2>Flower deco Caregory</h2>
+        <p>
+          “Elevate your interiors with elegant flower décor arrangements. Designed
+          to capture natural beauty, each piece adds freshness, color,
+          and graceful charm to living spaces year-round.”
+        </p>
+        <a href="flower intro.html" class="btn">Learn More →</a>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <h2 class="split-heading">
+    <span class="bold">CRAFTING</span> <span class="slim">Timeless Spaces</span>
+  </h2>
+
+  <section class="video-section">
+    <video autoplay muted loop playsinline>
+      <source src="videoffint.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop playsinline>
+      <source src="videoffint.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop playsinline>
+      <source src="videointerdd.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <video autoplay muted loop playsinline>
+      <source src="videointerdd.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <br>
+  <br>
+
+  <h2 class="split-heading">
+    <span class="slim">Ending New Year Deels</span> <span class="bold">HURRY UP!</span>
+  </h2>
+
+  <section class="countdown-section">
+    <p class="countdown-title">TIME REMAINING</p>
+
+    <div class="countdown">
+      <div class="time-box">
+        <div class="flip-card"><span id="days">06</span></div>
+        <p>DAYS</p>
+      </div>
+
+      <div class="time-box">
+        <div class="flip-card"><span id="hours">12</span></div>
+        <p>HOURS</p>
+      </div>
+
+      <div class="time-box">
+        <div class="flip-card"><span id="minutes">35</span></div>
+        <p>MINUTES</p>
+      </div>
+
+      <div class="time-box">
+        <div class="flip-card"><span id="seconds">17</span></div>
+        <p>SECONDS</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ai-assistant-icon1" id="chatbotToggle1" title="AI Assistant">
+    <img src="L&Llogo.jpg" alt="AI Assistant" class="chatbot-photo1">
+  </div>
+
+  <div id="chatbot1">
+    <div class="chat-header1">
+      AI Assistant
+      <span id="closeChat1">&times;</span>
+    </div>
+    <div class="chat-body1" id="chatBody1"></div>
+    <div class="chat-footer1">
+      <input type="text" id="userInput1" placeholder="Type a message...">
+      <button id="sendBtn1">Send</button>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!--cdn connect js-->
+  <script src="loonlanen.js"></script>
+  <script src="cartfunction.js"></script>
+
+
+  <footer class="site-footer"> <!--footer designing-->
+    <div class="footer-grid">
+      <div class="footer-contact">
+        <h4>Our Branches</h4>
+        <p>Colombo Branch</p>
+        <p>Galle Branch</p>
+        <p>Kandy Branch</p>
+        <p>Kaluthara Branch</p>
+        <br>
+        <br>
+        <h4>Main branch</h4>
+        <p><strong>Contact Us</strong></p>
+        <p>+94 777 58 87 78</p>
+        <p>LOOM & LANÈ Studio, Colombo, Sri Lanka</p>
+        <p>Store Hours: 10:00am – 7:30pm</p>
+      </div>
+
+      <div class="footer-description">
+        <p><strong>LOOM & LANÈ</strong></p>
+        <p>LOOM & LANÈ is a celebration of timeless home décor, blending handcrafted wooden creations, refined porcelain
+          pieces, and artful floral arrangements.</p>
+      </div>
+
+      <div class="footer-links">
+        <p><strong>Explore</strong></p>
+        <p><a href="index.html">HOME</a> | <a href="productslane.html">PRODUCTS</a> | <a
+            href="Faqlane.html">FAQ</a> | <a href="aboutuslane.html">ABOUT US</a> | <a href="looncontact.html">CONTACT
+            US</a></p>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="L&Llogo.jpg" alt="home decarations" style="width:100px; height:100px;">
+    </div>
+
+    <div style="text-align: center;">
+      <p style="color: white;">L O O M & L A N È</p>
+    </div>
+    <br>
+    <div style="text-align: center;">
+      <p style="color: white;">2025. All rights reserved | Designed by Wathila Yethmal</p>
+    </div>
+  </footer>
+</body>
+
+</html>

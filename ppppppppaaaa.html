@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LOOM & LANÈ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="loooooooo.css">
+</head>
+
+<body>
+
+  <div class="pay-shell">
+
+
+    <div class="pay-glass">
+      <h2>Your Order</h2>
+      <div id="checkoutProducts"></div>
+    </div>
+
+    <div class="pay-card">
+      <h2>Card Payment</h2>
+
+      <div class="pay-row"><span>Subtotal</span><span>LKR <b id="subtotal">0.00</b></span></div>
+      <div class="pay-row"><span>Tax (8%)</span><span>LKR <b id="tax">0.00</b></span></div>
+      <div class="pay-row"><span>Total</span><span>LKR <b id="total">0.00</b></span></div>
+
+      <hr><br>
+
+      <input class="pay-input" id="cardName" placeholder="Card Holder Name">
+      <input class="pay-input" id="cardNumber" placeholder="Card Number" maxlength="16">
+      <input class="pay-input" id="cardExpiry" placeholder="MM/YY" maxlength="5">
+      <input class="pay-input" id="cardCVV" placeholder="CVV" maxlength="3">
+
+      <button class="pay-btn" onclick="payNow()">Subscribe & Pay</button>
+    </div>
+
+  </div>
+
+
+  <script src="payloonc.js"></script>
+
+</body>
+
+</html>

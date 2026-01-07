@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>LOOM & LANÈ</title>
+  <link rel="icon" href="L&L image.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="loooooooo.css">
+</head>
+
+<body>
+
+
+  <header class="main-header">
+
+    <div class="logo">
+      <i>LOOM & LANÈ</i>
+    </div>
+
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="productslane.html">PRODUCTS</a>
+      <a href="Faqlane.html">FAQ</a>
+      <a href="aboutuslane.html">ABOUT US</a>
+      <a href="looncontact.html">CONTACT US</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <div class="search-box">
+        <form id="googleSearchForm" target="_blank" action="https://www.google.com/search" method="GET"
+          class="search-form" autocomplete="off">
+          <input type="text" name="q" id="searchInput" placeholder="Search..." required>
+        </form>
+      </div>
+
+      <a href="cartlane.html" class="cart-link">
+        <i class="fas fa-shopping-cart"></i>
+        <span id="cartcount">0</span>
+      </a>
+
+      <i class="fa-regular fa-moon icon dark-toggle-btn"></i>
+
+      <a href="looonlog.html" class="user-link">
+        <i class="fa-regular fa-user icon"></i>
+      </a>
+
+    </div>
+
+  </header>
+  <br>
+  <br>
+  <br>
+
+
+  <div class="pd-container">
+
+    <div class="pd-gallery">
+      <div class="pd-main-img">
+        <img id="pdBigImg" src="ffloon.jpg">
+      </div>
+
+      <div class="pd-thumbs">
+        <img src="ffloon.jpg" class="active" onclick="changePdImg(this)">
+        <img src="ffloon1.jpg" onclick="changePdImg(this)">
+        <img src="ffloon2.jpg" onclick="changePdImg(this)">
+      </div>
+    </div>
+
+
+    <div class="pd-info">
+
+      <h1>Carnation Flower</h1>
+      <p class="pd-sub">get a freshness and luxury look</p>
+
+      <div class="pd-price-row">
+        <span class="pd-price">LKR 8500.00</span>
+        <span class="pd-old">LKR 9000.00</span>
+        <span class="pd-off">25% OFF</span>
+      </div>
+
+      <p class="pd-desc">
+        A vibrant and fragrant bouquet featuring beautiful carnations,
+        known for their ruffled petals and long-lasting freshness.
+        Perfect for brightening any space or special occasion with elegance and color.
+      </p>
+      <br>
+
+      <div class="color1">
+        <p>colour</p>
+        <br>
+        <span class="dot1" style="background-color: darkblue;"></span> <!--colour selector sdding-->
+        <span class="dot1" style="background-color: orangered;"></span>
+        <span class="dot1" style="background-color: purple;"></span>
+        <span class="dot1" style="background-color: pink;"></span>
+      </div>
+
+      <div class="pd-qty">
+        <br>
+        <br>
+        <span>Quantity</span>
+        <br>
+        <br>
+        <div class="pd-qty-box">
+          <button onclick="pdQty(-1)">−</button>
+          <input id="pdQtyVal" value="1" readonly>
+          <button onclick="pdQty(1)">+</button>
+        </div>
+      </div>
+      <br>
+      <br>
+
+      <div class="pd-actions">
+        <button id="pdAddCartBtn" data-product-name="Carnation Flower" onclick="pdAddCart()">Add to Cart</button>
+        <button class="pd-buy" data-name="Carnation Flower" data-price="8500" data-image="ffloon.jpg"
+          onclick="pdBuyNow(this)">Buy Now</button>
+      </div>
+      <br>
+      <br>
+
+      <div class="pd-extra">
+        <p>🚚 Free delivery in 3–5 days</p>
+        <p>🔁 30-day easy returns</p>
+        <p>🔒 Secure checkout</p>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!--cdn connect js-->
+  <script src="cartfunction.js"></script>
+  <script src="loonlanen.js"></script>
+
+  <footer class="site-footer"> <!--footer designing-->
+    <div class="footer-grid">
+      <div class="footer-contact">
+        <h4>Our Branches</h4>
+        <p>Colombo Branch</p>
+        <p>Galle Branch</p>
+        <p>Kandy Branch</p>
+        <p>Kaluthara Branch</p>
+        <br>
+        <br>
+        <h4>Main branch</h4>
+        <p><strong>Contact Us</strong></p>
+        <p>+94 777 58 87 78</p>
+        <p>LOOM & LANÈ Studio, Colombo, Sri Lanka</p>
+        <p>Store Hours: 10:00am – 7:30pm</p>
+      </div>
+
+      <div class="footer-description">
+        <p><strong>LOOM & LANÈ</strong></p>
+        <p>LOOM & LANÈ is a celebration of timeless home décor, blending handcrafted wooden creations, refined porcelain
+          pieces, and artful floral arrangements.</p>
+      </div>
+
+      <div class="footer-links">
+        <p><strong>Explore</strong></p>
+        <p><a href="index.html">HOME</a> | <a href="productslane.html">PRODUCTS</a> | <a
+            href="Faqlane.html">FAQ</a> | <a href="aboutuslane.html">ABOUT US</a> | <a href="looncontact.html">CONTACT
+            US</a></p>
+      </div>
+    </div>
+
+    <div style="text-align: center;">
+      <img src="L&Llogo.jpg" alt="home decarations" style="width:100px; height:100px;">
+    </div>
+
+    <div style="text-align: center;">
+      <p style="color: white;">L O O M & L A N È</p>
+    </div>
+    <br>
+    <div style="text-align: center;">
+      <p style="color: white;">2025. All rights reserved | Designed by Wathila Yethmal</p>
+    </div>
+  </footer>
+</body>
+
+</html>
